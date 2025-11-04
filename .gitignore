@@ -1,0 +1,13 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
+# Editor / OS files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Environment files (API keys)
+.env
