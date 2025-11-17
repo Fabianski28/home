@@ -50,10 +50,10 @@ const Header: React.FC = () => {
     isScrolled ? 'bg-[#0A2C47] shadow-md' : 'bg-transparent'
   }`}
 >
-  <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+  <div className="container mx-auto px-8 py-2 flex justify-between items-center">
     {/* Logo */}
     <a href="#hero" className="flex items-center">
-      <img src="/images/LogoHome.png" alt="Maison Nette" className="h-10 w-auto" />
+      <img src="/images/LogoHome.png" alt="Maison Nette" className="h-16 w-auto" />
     </a>
 
     {/* Nav desktop */}
