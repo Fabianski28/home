@@ -1,0 +1,35 @@
+/* Importation des polices Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Felipa&family=Onest&display=swap');
+
+
+/* Corps du site — texte courant, paragraphes, boutons */
+body {
+  font-family: 'Onest', sans-serif; /* remplace Lato par Onest */
+  font-weight: 400;
+  color: #1f2937;
+  background-color: #f9fafb;
+  line-height: 1.6;
+}
+
+/* Titres et éléments marquants */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Felipa', cursive; /* remplace Montserrat par Felipa */
+  font-weight: normal; /* Felipa est souvent fine par défaut */
+  letter-spacing: 0.02em;
+  color: #111827;
+  margin-bottom: 0.5em;
+}
+
+/* Titres accentués (ex. slogan ou hero section) */
+.hero-title {
+  font-family: 'Felipa', cursive;
+  font-weight: normal;
+  letter-spacing: 0.04em;
+}
+
+/* Boutons */
+button {
+  font-family: 'Onest', sans-serif; /* texte courant */
+  font-weight: 500;
+}
+

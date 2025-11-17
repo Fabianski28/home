@@ -22,7 +22,7 @@ const SparklesIcon: React.FC<{className?: string}> = ({className}) => (
 const BenefitCard: React.FC<{icon: React.ReactNode; title: string; description: string}> = ({ icon, title, description }) => (
     <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 text-center">
         <div className="flex justify-center items-center mb-4">
-            <div className="bg-blue-100 text-blue-600 p-4 rounded-full">
+            <div className="bg-blue-100 text-[#B87333] p-4 rounded-full">
                 {icon}
             </div>
         </div>
@@ -30,6 +30,7 @@ const BenefitCard: React.FC<{icon: React.ReactNode; title: string; description: 
         <p className="text-gray-600">{description}</p>
     </div>
 );
+
 
 
 const Benefits: React.FC = () => {
@@ -54,11 +55,11 @@ const Benefits: React.FC = () => {
   ];
 
   return (
-    <section id="avantages" className="py-20 bg-gray-50">
+    <section id="avantages" className="py-20 bg-[#0A2C47]">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">{t.benefitsTitle}</h2>
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-white">{t.benefitsTitle}</h2>
+          <p className="text-white mt-4 max-w-2xl mx-auto">
             {t.benefitsSubtitle}
           </p>
         </div>

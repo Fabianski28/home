@@ -45,52 +45,53 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
-      }`}
-    >
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo */}
-        <a href="#hero" className="flex items-center">
-          <img src="/images/LogoHome.png" alt="Maison Nette" className="h-10 w-auto" />
-        </a>
+<header
+  className={`sticky top-0 z-50 transition-all duration-300 ${
+    isScrolled ? 'bg-[#0A2C47] shadow-md' : 'bg-transparent'
+  }`}
+>
+  <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+    {/* Logo */}
+    <a href="#hero" className="flex items-center">
+      <img src="/images/LogoHome.png" alt="Maison Nette" className="h-10 w-auto" />
+    </a>
 
-        {/* Nav desktop */}
-        <nav className="hidden md:flex items-center space-x-6">
-          <a href="#avantages" className="text-gray-600 hover:text-blue-600 transition-colors">
-            {t.navBenefits}
-          </a>
-          <a href="#avant-apres" className="text-gray-600 hover:text-blue-600 transition-colors">
-            {t.navBeforeAfter}
-          </a>
-          <a
-            href="#contact"
-            className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 shadow"
-          >
-            {t.navContact}
-          </a>
+    {/* Nav desktop */}
+    <nav className="hidden md:flex items-center space-x-6">
+      <a href="#avantages" className="text-white hover:text-[#B87333] transition-colors">
+        {t.navBenefits}
+      </a>
+      <a href="#avant-apres" className="text-white hover:text-[#B87333] transition-colors">
+        {t.navBeforeAfter}
+      </a>
 
-          {/* Language Switcher desktop */}
-          <div className="ml-4">
-            <LanguageSwitcher />
-          </div>
-        </nav>
+      <a
+        href="#contact"
+        className="bg-[#B87333] text-white px-4 py-2 rounded-full hover:bg-[#d18445] transition-all duration-300 shadow"
+      >
+        {t.navContact}
+      </a>
 
-        {/* Mobile */}
-        <div className="flex md:hidden items-center space-x-2">
-          {/* Language Switcher mobile */}
-          <LanguageSwitcher />
-
-          <a
-            href="#contact"
-            className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 shadow"
-          >
-            {t.navContactMobile}
-          </a>
-        </div>
+      {/* Language Switcher desktop */}
+      <div className="ml-4">
+        <LanguageSwitcher />
       </div>
-    </header>
+    </nav>
+
+    {/* Mobile */}
+    <div className="flex md:hidden items-center space-x-2">
+      <LanguageSwitcher />
+
+      <a
+        href="#contact"
+        className="bg-[#B87333] text-white px-4 py-2 rounded-full hover:bg-[#d18445] transition-all duration-300 shadow"
+      >
+        {t.navContactMobile}
+      </a>
+    </div>
+  </div>
+</header>
+
   );
 };
 
