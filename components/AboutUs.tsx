@@ -10,7 +10,7 @@ const AboutUs: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
           <div className="md:w-1/2">
             <img 
-              src="public/images/image2.jpg" 
+              src="images/image2.jpg" 
               alt="Équipe de nettoyage professionnelle Maison Nette" 
               className="rounded-xl shadow-2xl w-full h-auto object-cover"
             />
